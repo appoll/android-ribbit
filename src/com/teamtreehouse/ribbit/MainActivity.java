@@ -134,9 +134,7 @@ public class MainActivity extends FragmentActivity implements
 				// 5. Return the file's URI				
 				return Uri.fromFile(mediaFile);
 			}
-			else {
-				return null;
-			}
+			return null;
 		}
 		
 		private boolean isExternalStorageAvailable() {
@@ -145,9 +143,8 @@ public class MainActivity extends FragmentActivity implements
 			if (state.equals(Environment.MEDIA_MOUNTED)) {
 				return true;
 			}
-			else {
-				return false;
-			}
+			return false;
+			
 		}
 	};
 
